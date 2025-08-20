@@ -1,0 +1,26 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ch;
+    cout << "Enter an uppercase character: ";
+    cin >> ch;
+
+
+    if (ch >= 'A' && ch <= 'Z') {
+        ch = ch + 32; 
+        cout << "Lowercase: " << ch << endl;
+    } else {
+        cout << "Not an uppercase character!" << endl;
+    }
+
+    return 0;
+}
